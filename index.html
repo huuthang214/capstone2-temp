@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoppingCart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        <div class="filter">
+          <div class="filter__select">
+            <select name="phone" id="filter">
+              <option value="iphone">Iphone</option>
+              <option value="Samsung">SamSung</option>
+            </select>
+          </div>
+          <div class="filter__nav">
+            <div class="button-cart">
+              <button onclick="">
+                <i class="fas fa-shopping-cart" style="font-size: 2rem"></i>
+              </button>
+              <span class="total-qty">0</span>
+
+              <div class="cart">
+                <div class="cart__header">
+                  <h2>Cart</h2>
+                  <button>&times;</button>
+                </div>
+                <div class="cart__body">
+                  <div class="cart__list">
+                    <!-- <div class="cart__item">
+                      <div class="cart__image">
+                        <img
+                          src="https://fptshop.com.vn/landing-galaxy-z-series/Content/images/folddes9.png?v=9999"
+                          alt=""
+                        />
+                      </div>
+                      <strong>Iphone 11</strong>
+                      <div class="quantity">1</div>
+                      <p>$2000</p>
+                      <button>xóa</button>
+                    </div> -->
+
+                    <span class="empty"
+                      >Chưa có sản phẩm nào được thêm vào</span
+                    >
+                    <hr style="background-color: white" />
+                  </div>
+                </div>
+                <div class="cart__footer">
+                  <div class="cart__footer__content">
+                    <strong>
+                      Total: $
+                      <span class="total">0</span>
+                    </strong>
+                    <div class="action">
+                      <button class="btn" data-type="purchase">Purchase</button>
+                      <button class="btn" data-type="clear">Clear Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="main-cart"></div>
+          <!-- <div onclick="sideNav(0)" class="cover"></div>
+          <div class="cover purchase-cover"></div> -->
+          <!-- <div class="cart">
+            <div class="side-nav">
+              <button onclick="sideNav(0)"><i class="fas fa-times"></i></button>
+              <h2>Cart</h2>
+              <div class="cart-items"></div>
+              <div class="final">
+                <strong>Total: $ <span class="total">0</span></strong>
+                <div class="action">
+                  <button onclick="buy(1)" class="btn buy">
+                    Purchase
+                    <i class="fas fa-credit-card" style="color: #6665dd"></i>
+                  </button>
+                  <button onclick="clearCart()" class="btn clear">
+                    Clear Cart
+                    <i class="fas fa-trash" style="color: #bb342f"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="stock-limit">
+            <em>You Can Only Buy 10 Items For Each Product</em>
+            <button class="btn-ok" onclick="limitPurchase(this)">Okay</button>
+          </div> -->
+          <!-- <div class="order-now"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./models/Products.js"></script>
+    <script src="./services/productsAPI.js"></script>
+    <script src="./controller/main.js"></script>
+  </body>
+</html>
